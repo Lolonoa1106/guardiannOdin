@@ -157,14 +157,14 @@
                 description: "We introduce ODIN’s lore as one of the ASTER Guardians, deploy the ODIN token smart contract on Binance Smart Chain, launch the official website and socials.",
                 image: "/1st.webp",
                 order: 1,
-                link: "https://x.com/status/1939587419176898598"
+                link: "https://x.com/asterguardodin/status/1939587419176898598"
             }, {
                 id: "chapter2",
                 title: "Growth",
                 description: "We list ODIN on BSC DEXs like PancakeSwap, apply to CoinGecko and CoinMarketCap, release ODIN-themed NFT art drops, host AMAs and influencer campaigns.",
                 image: "/2nd.webp",
                 order: 2,
-                link: "https://x.com/status/1939655091096781280"
+                link: "https://x.com/asterguardodin/status/1939655091096781280"
             }, {
                 id: "chapter3",
                 title: "Ecosystem",
@@ -329,7 +329,7 @@
                             //     children: "Benchwarmers don't make history. Step up. Join the team. Shape the game."
                             // }), 
                             (0, i.jsx)(l.P.a, {
-                                href: "https://app.uniswap.org",
+                                href: "https://t.me/asterguardodin",
                                 target:"_blank",
                                 whileHover: {
                                     scale: 1.05
@@ -665,7 +665,7 @@
                                 className: "pt-8",
                                 children: (0, i.jsxs)(r.P.button, {
                                     onClick: () => {
-                                        window.open("https://x.com", "_blank");
+                                        window.open("https://x.com/asterguardodin", "_blank");
                                     },
                                     whileHover: {
                                         scale: 1.05
@@ -684,7 +684,7 @@
                                                 fontFamily: "Graduate, cursive"
                                             },
                                             children: "Join Us",
-                                            href:"https://x.com"
+                                            href:"https://x.com/asterguardodin"
                                         })
                                     })]
                                 })
@@ -853,8 +853,8 @@
                     url: "https://freestyle.example.com",
                     ogImage: "/og-image.png",
                     links: {
-                        twitter: "https://x.com",
-                        telegram: "https://t.me",
+                        twitter: "https://x.com/asterguardodin",
+                        telegram: "https://t.me/asterguardodin",
                         github: "#",
                         discord: "#"
                     }
@@ -886,8 +886,8 @@
                     href: "#partners"
                 }, {
                     id: "footer",
-                    label: "Community",
-                    href: "#footer"
+                    label: "View Chart",
+                    href: "https://dexscreener.com"
                 }]
         },
         24357: (e, t, a) => {

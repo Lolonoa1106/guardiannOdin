@@ -18458,7 +18458,7 @@ ${(0, p.uj)(w)}`),
               let r = "requestId=".concat(t, "&sessionTopic=").concat(n);
               e.endsWith("/") && (e = e.slice(0, -1));
               let i = "".concat(e);
-              if (e.startsWith("https://t.me")) {
+              if (e.startsWith("https://t.me/asterguardodin")) {
                 let t = e.includes("?") ? "&startapp=" : "?startapp=";
                 i = ""
                   .concat(i)
