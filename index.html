@@ -1,1908 +1,481 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="preload"
-      as="image"
-      imagesrcset="/_next/image?url=%2Fmain-character2.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fmain-character2.webp&amp;w=1200&amp;q=75 2x"
-    />
-    <link
-      rel="preload"
-      as="image"
-      imagesrcset="/_next/image?url=%2Ffsc_event.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Ffsc_event.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Ffsc_event.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Ffsc_event.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Ffsc_event.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Ffsc_event.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Ffsc_event.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Ffsc_event.webp&amp;w=3840&amp;q=75 3840w"
-      imagesizes="100vw"
-    />
-    <link
-      rel="stylesheet"
-      href="/_next/static/css/280dc8809cb07948.css?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      data-precedence="next"
-    />
-    <link
-      rel="preload"
-      as="script"
-      fetchPriority="low"
-      href="/_next/static/chunks/webpack-05e9498bb2f9a062.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-    />
-    <script
-      src="/_next/static/chunks/4bd1b696-c811f633f4f0d777.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/1684-c77cd37b25fc2da5.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/main-app-d41d56f775a954bb.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/23589dac-9d2825ac9161f28e.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/6183-c7ecf01c64d86290.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/2228-b660489c86f77b75.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/5325-1dec12a5c0c94f5a.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/3665-f5bd254749338898.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/2247-c100bb609e7745c1.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/app/layout-0b598abb5f44694e.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
+<!doctype html>
+<html lang="en">
 
-    <style>
-      /* body {
-        opacity: 5% !important; 
-        position: fixed !important;
-        height: 100% !important;
-        width: 100% !important;
-        z-index: 40 !important;
-        top: 0 !important;
-        left: 0 !important;
-        pointer-events: none !important;
-        background-blend-mode: overlay !important;
-        background-image: url('noise.gif') !important;
-      } */
+<head>
+	<title>ASTER GUARDIAN ODIN</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+			visibility: hidden;
+			background-color: #000;
+			transition:
+				opacity 0.2s ease 0.2s,
+				visibility 0.2s ease 0.2s;
+		}
 
-      body > div.min-h-screen.flex.flex-col > main > div:nth-child(7) {
-        display: none !important;
-      }
-    </style>
-    <meta name="next-size-adjust" content="" />
-    <meta name="theme-color" content="#000000" />
-    <title>GUARDIAN ODIN</title>
-    <link rel="canonical" href="https://freestyle.example.com" />
-    <link
-      rel="icon"
-      href="/icon.png"
-      type="image/png"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/apple-icon.png?0c2e81a1d85ed206"
-      type="image/png"
-      sizes="192x192"
-    />
-    <script>
-      document
-        .querySelectorAll(
-          'body link[rel="icon"], body link[rel="apple-touch-icon"]'
-        )
-        .forEach((el) => document.head.appendChild(el));
-    </script>
-    <script
-      src="/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      nomodule=""
-    ></script>
-    
-  </head>
-  <body
-    class="__variable_bc0dcf __variable_5625f3 __variable_68a28d __variable_e7b85b font-sans antialiased">
+		.loaded body {
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20241027231045" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <div hidden="">
-      <!--$?--><template id="B:0"></template
-      ><!--/$-->
-    </div>
-    <div class="min-h-screen flex flex-col">
-      <div
-        class="fixed top-0 left-0 right-0 h-1 bg-dark-gray origin-left z-[60]"
-        style="transform: scaleX(0)"
-      >
-        <div class="h-full bg-gradient-to-r from-neon-green to-neon-blue"></div>
-      </div>
-      <header
-        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 antialiased bg-[#fbdfb0]/100 backdrop-blur-sm"
-      >
-        <div class="container mx-auto px-4 md:px-8">
-          <nav class="flex items-center justify-between h-20">
-            <a class="flex items-center" href="/"
-              ><div class="relative">
-                <img
-                  alt="Free Style"
-                  width="140"
-                  height="40"
-                  decoding="async"
-                  data-nimg="1"
-                  class="h-auto"
-                  style="color: transparent"
-                  src="/header-logo.webp"
-                /></div
-            ></a>
-            <div class="hidden lg:flex items-center space-x-8">
-              <a
-                href="#home"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-white"
-                ><span class="relative inline-flex items-center"
-                  ><span
-                    class="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 via-white to-yellow-400 animate-pulse"
-                  ></span
-                  ><span
-                    class="text-2xl font-black font-pretendard tracking-wider"
-                    style="
-                      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                        0 0 20px rgba(255, 255, 0, 0.6),
-                        0 0 30px rgba(255, 255, 0, 0.4);
-                    "
-                    >Game</span
-                  ><span class="ml-1 text-xl animate-bounce">🔥</span></span
-                ></a
-              ><a
-                href="#about"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>About</span></a
-              ><a
-                href="#tokenomics"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>Tokenomics</span></a
-              ><a
-                href="#roadmap"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>Roadmap</span></a
-              ><a
-                href="#blog"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>Blog</span></a
-              ><a
-                href="#partners"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>Partners</span></a
-              ><a
-                href="https://dexscreener.com"
-                class="text-lg font-medium font-pretendard transition-all duration-200 relative text-black hover:text-white"
-                ><span>View Chart</span></a
-              ><!--$!--><template
-                data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"
-              ></template>
-              <div class="relative">
-                <div class="relative group">
-                  <div
-                    class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 rounded-xl blur-md opacity-75 animate-pulse"
-                  ></div>
-                  <div
-                    class="relative px-8 py-3 bg-black rounded-xl overflow-hidden"
-                  >
-                    <span
-                      class="relative font-pretendard font-bold text-lg bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent"
-                      >Buy $ODIN</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--/$-->
-            </div>
-            <button
-              class="lg:hidden p-2 text-black hover:text-white transition-colors"
-              aria-label="Toggle mobile menu"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                height="24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-                ></path>
-              </svg>
-            </button>
-          </nav>
-        </div>
-      </header>
-      <main class="flex-1 pt-20">
-        <div
-          id="home"
-          class="relative h-dvh w-full overflow-hidden text-zinc-950"
-          style="background-color: #fbdfb0"
-        >
-          <div
-            class="absolute top-0 left-0 right-0 overflow-hidden py-4 md:py-8"
-          >
-            <div class="flex animate-marquee">
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-              <div class="flex shrink-0">
-                <p
-                  class="font-graduate font-black mr-[60px] md:mr-[120px] text-[180px] md:text-[360px] leading-[1] tracking-[-6px] md:tracking-[-12px] text-black"
-                  style="font-weight: 900"
-                >
-                  GUARDIAN ODIN
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="relative h-full z-10">
-            <div
-              class="absolute inset-0 flex justify-end items-end overflow-hidden"
-            >
-              <img
-                alt="main-character"
-                width="600"
-                height="800"
-                decoding="async"
-                data-nimg="1"
-                class="relative h-full max-h-[150%] w-auto object-contain object-bottom"
-                style="color: transparent"
-                
-                src="/_next/image?url=%2Fmain-character2.webp&amp;w=1200&amp;q=75"
-              />
-            </div>
-            <div
-              class="absolute top-[50%] md:top-[55%] left-0 z-20 w-full px-4 sm:px-8 lg:px-16"
-            >
-              <div class="max-w-7xl">
-                <div class="max-w-[90%] sm:max-w-[70%] md:max-w-[50%]">
-                  <div class="relative p-4">
-                    <div
-                      class="absolute inset-0 bg-black/30 backdrop-blur-md rounded-lg"
-                    ></div>
-                    <button class="relative group w-full" tabindex="0">
-                      <div
-                        class="absolute inset-0 overflow-hidden pointer-events-none"
-                      >
-                        <div
-                          class="absolute top-0 h-[3px] w-[100px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
-                          style="box-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24"
-                        ></div>
-                        <div
-                          class="absolute right-0 w-[3px] h-[100px] bg-gradient-to-b from-transparent via-yellow-400 to-transparent"
-                          style="box-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24"
-                        ></div>
-                        <div
-                          class="absolute bottom-0 h-[3px] w-[100px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
-                          style="box-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24"
-                        ></div>
-                        <div
-                          class="absolute left-0 w-[3px] h-[100px] bg-gradient-to-b from-transparent via-yellow-400 to-transparent"
-                          style="box-shadow: 0 0 20px #fbbf24, 0 0 40px #fbbf24"
-                        ></div>
-                      </div>
-                      <div
-                        class="relative bg-transparent border-2 border-white/50 group-hover:bg-[#fbdfb0] group-hover:border-[#fbdfb0] transition-all duration-300 py-3 sm:py-4 md:py-5 lg:py-6"
-                      >
-                        <div
-                          class="relative flex justify-center items-center w-full px-4"
-                        >
-                          <span
-                            class="font-pretendard font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-white group-hover:text-black transition-colors duration-300 tracking-[0.1em] whitespace-nowrap"
-                            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)"
-                            >Buy $ODIN</span
-                          >
-                        </div>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <section
-          id="about"
-          class="relative min-h-screen w-full bg-black overflow-hidden flex items-center justify-center py-20"
-        >
-          <div class="absolute inset-0 opacity-10">
-            <div
-              class="absolute inset-0"
-              style="
-                background-image: repeating-linear-gradient(
-                  45deg,
-                  #fbdfb0,
-                  #fbdfb0 10px,
-                  transparent 10px,
-                  transparent 20px
-                );
-              "
-            ></div>
-          </div>
-          <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-              class="text-center space-y-8"
-              style="opacity: 0; transform: translateY(30px)"
-            >
-              <h2
-                class="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#fbdfb0] uppercase tracking-tight"
-                style="
-                  font-family: Graduate, cursive;
-                  text-shadow: 3px 3px 0 #fff, 6px 6px 0 #000;
-                  opacity: 0;
-                  transform: scale(0.9);
-                "
-              >
-                ODIN is one of the Aster Guardians.
-              </h2>
-              <div
-                class="relative w-full max-w-4xl mx-auto"
-                style="opacity: 0; transform: scale(0.95)"
-              >
-                <div
-                  class="relative aspect-[16/10] w-full rounded-lg overflow-hidden border-4 border-[#fbdfb0] shadow-2xl"
-                >
-                  <img
-                    alt="Basketball Court with Players"
-                    decoding="async"
-                    data-nimg="fill"
-                    class="object-cover"
-                    style="
-                      position: absolute;
-                      height: 100%;
-                      width: 100%;
-                      left: 0;
-                      top: 0;
-                      right: 0;
-                      bottom: 0;
-                      color: transparent;
-                    "
-                    sizes="100vw"
-                    
-                    src="/_next/image?url=%2Ffsc_event.webp&amp;w=3840&amp;q=75"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-                  ></div>
-                </div>
-              </div>
-              <div
-                class="space-y-6"
-                style="opacity: 0; transform: translateY(20px)"
-              >
-                <p
-                  class="text-2xl sm:text-3xl md:text-4xl font-bold text-white"
-                >
-                  ODIN is one of the two Aster Guardians, 
-                </p>
-                <p
-                  class="text-xl sm:text-2xl md:text-3xl text-[#fbdfb0] font-semibold"
-                >
-                  standing alongside Dust in the guardian duo.
-                </p>
-                <div class="pt-8" style="opacity: 0; transform: scale(0.9)">
-                  <button class="relative group" tabindex="0">
-                    <div
-                      class="absolute inset-0 bg-gradient-to-r from-[#fbdfb0] via-yellow-500 to-[#fbdfb0] rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity animate-pulse"
-                    ></div>
-                    <div
-                      class="relative bg-black border-4 border-[#fbdfb0] hover:bg-[#fbdfb0] hover:border-white px-12 py-5 rounded-full transition-all duration-300"
-                    >
-                      <span
-                        class="font-black text-2xl sm:text-3xl uppercase text-[#fbdfb0] group-hover:text-black tracking-wider"
-                        style="font-family: Graduate, cursive"
-                        >Game Play</span
-                      >
-                    </div>
-                  </button>
-                </div>
-                <!-- <p
-                  class="text-base sm:text-lg md:text-xl text-gray-300 font-medium pt-4"
-                  style="opacity: 0"
-                >
-                  Make Sure Checking Credentials Before Playing the Game
-                </p> -->
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute top-10 left-10 w-20 h-20 border-4 border-[#fbdfb0] rotate-45 opacity-20 animate-spin-slow"
-          ></div>
-          <div
-            class="absolute bottom-10 right-10 w-32 h-32 border-4 border-yellow-500 rotate-12 opacity-20 animate-spin-slow"
-          ></div>
-        </section>
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <!--$!--><template
-          data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"
-        ></template>
-        <div
-          class="py-20 bg-gradient-to-b from-black via-orange-950/20 to-black"
-        >
-          <div class="container mx-auto px-4">
-            <div class="text-center max-w-4xl mx-auto">
-              <h2 class="text-5xl md:text-7xl font-bold font-bebas mb-6">
-                <span
-                  class="bg-gradient-to-r from-orange-400 via-red-500 to-orange-400 bg-clip-text text-transparent"
-                  >TOKENOMICS</span
-                >
-              </h2>
-            </div>
-          </div>
-        </div>
-        <!--/$-->
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <!-- <section
-          class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-orange-50 to-white relative overflow-hidden"
-          id="trailer"
-          style="opacity: 0"
-        >
-          <div class="absolute inset-0 z-0">
-            <div class="hidden lg:block">
-              <img
-                alt="Character 1"
-                loading="lazy"
-                width="600"
-                height="800"
-                decoding="async"
-                data-nimg="1"
-                class="absolute left-0 bottom-0 h-[72%] w-auto object-contain"
-                style="color: transparent"
-                
-                src="/_next/image?url=%2Factivities-character-1.webp&amp;w=1200&amp;q=75"
-              /><img
-                alt="Character 2"
-                loading="lazy"
-                width="600"
-                height="800"
-                decoding="async"
-                data-nimg="1"
-                class="absolute right-0 bottom-0 h-[72%] w-auto object-contain"
-                style="color: transparent"
-                
-                src="/_next/image?url=%2Factivities-character-2.webp&amp;w=1200&amp;q=75"
-              />
-            </div>
-            <div class="lg:hidden">
-              <img
-                alt="Characters"
-                loading="lazy"
-                width="800"
-                height="600"
-                decoding="async"
-                data-nimg="1"
-                class="absolute left-0 bottom-0 h-[70%] w-auto object-contain opacity-30"
-                style="color: transparent"
-                
-                src="/_next/image?url=%2Factivities-character-1.webp&amp;w=1920&amp;q=75"
-              />
-            </div>
-          </div>
-          <div class="container-max relative z-10">
-            <div
-              class="text-center mb-12"
-              style="opacity: 0; transform: translateY(20px)"
-            >
-              <div
-                class="inline-block px-4 py-2 bg-black rounded-full mb-4"
-                style="transform: scale(0)"
-              >
-                <span
-                  class="text-white text-sm font-heading uppercase tracking-wider"
-                  >Experience</span
-                >
-              </div>
-              <h2
-                class="text-4xl md:text-5xl lg:text-6xl font-display mb-4 text-black"
-              >
-                Watch Trailer
-              </h2>
-              <p
-                class="text-sm md:text-lg text-black/70 max-w-2xl mx-auto font-medium"
-              >
-                The Court Never Dies. Same Fire with New Rules.<br />Join our
-                community and dominate the court.
-              </p>
-            </div>
-            <div
-              class="relative max-w-4xl mx-auto"
-              style="opacity: 0; transform: scale(0.95)"
-            >
-              <div
-                class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black"
-              >
-                <video
-                  class="w-full h-full object-cover"
-                  src="/trailer_mv.mp4"
-                  loop=""
-                  muted=""
-                  playsinline=""
-                ></video>
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-                >
-                  <button
-                    class="absolute inset-0 flex items-center justify-center group"
-                    style="opacity: 0; transform: scale(0.8)"
-                  >
-                    <div class="relative">
-                      <div
-                        class="absolute inset-0 bg-white rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-60"
-                      ></div>
-                      <div
-                        class="relative bg-black border-2 border-white rounded-full p-6 shadow-xl group-hover:scale-110 transition-transform duration-300"
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 448 512"
-                          class="w-8 h-8 text-white ml-1"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
-                  <div
-                    class="absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between"
-                  >
-                    <button
-                      class="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors"
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 448 512"
-                        height="20"
-                        width="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
-                        ></path>
-                      </svg></button
-                    ><button
-                      class="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors"
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        height="20"
-                        width="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zM461.64 256l45.64-45.64c6.3-6.3 6.3-16.52 0-22.82l-22.82-22.82c-6.3-6.3-16.52-6.3-22.82 0L416 210.36l-45.64-45.64c-6.3-6.3-16.52-6.3-22.82 0l-22.82 22.82c-6.3 6.3-6.3 16.52 0 22.82L370.36 256l-45.63 45.63c-6.3 6.3-6.3 16.52 0 22.82l22.82 22.82c6.3 6.3 16.52 6.3 22.82 0L416 301.64l45.64 45.64c6.3 6.3 16.52 6.3 22.82 0l22.82-22.82c6.3-6.3 6.3-16.52 0-22.82L461.64 256z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="mt-8 text-center"
-              style="opacity: 0; transform: translateY(20px)"
-            >
-              <p
-                class="text-black/60 font-heading uppercase tracking-wider text-sm"
-              >
-                Official Trailer • Click to Experience
-              </p>
-            </div>
-          </div>
-        </section> -->
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <section
-          class="relative overflow-hidden py-24 md:py-32 relative"
-          id="roadmap"
-          style="opacity: 0"
-        >
-          <div class="mx-auto px-4 md:px-8 lg:px-16 max-w-7xl">
-            <div style="opacity: 0; transform: translateY(40px)">
-              <div class="text-center mb-16">
-                <div
-                  class="inline-block px-4 py-2 bg-black rounded-full mb-4"
-                  style="transform: scale(0)"
-                >
-                  <span
-                    class="text-white text-sm font-heading uppercase tracking-wider"
-                    >Our Journey</span
-                  >
-                </div>
-                <h2
-                  class="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-4 text-black"
-                >
-                  The GUARDIAN ODIN Story
-                </h2>
-                <p class="text-sm md:text-xl text-black/70 max-w-2xl mx-auto">
-                  Born from vision. Fueled by the crowd.<br />We&#x27;re not
-                  just building Web3 — we&#x27;re leveling it up.
-                </p>
-              </div>
-            </div>
-            <div class="mb-16" style="opacity: 0; transform: scale(0.8)">
-              <div class="relative overflow-hidden">
-                <div class="relative" style="transform: translateY(-15px)">
-                  <div
-                    class="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
-                  >
-                    <img
-                      alt="Our Story"
-                      loading="lazy"
-                      decoding="async"
-                      data-nimg="fill"
-                      class="object-cover"
-                      style="
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        color: transparent;
-                      "
-                      sizes="100vw"
-                      
-                      src="/_next/image?url=%2Fstory.webp&amp;w=3840&amp;q=90"
-                    />
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-                    ></div>
-                    <div
-                      class="absolute bottom-8 left-8 right-8 text-white"
-                      style="opacity: 0; transform: translateY(20px)"
-                    >
-                      <h3 class="text-2xl md:text-3xl font-bold mb-2">
-                        Our Journey Begins
-                      </h3>
-                      <p class="text-lg opacity-90">
-                        From vision to reality, building the future together
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative">
-              <div
-                class="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 hidden lg:block"
-              >
-                <div
-                  class="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-800 -translate-x-1/2"
-                ></div>
-                <div
-                  class="absolute left-1/2 top-0 w-[2px] bg-gradient-to-b from-neon-green to-neon-blue -translate-x-1/2 origin-top"
-                  style="height: 100%; transform: scaleY(0)"
-                ></div>
-                <div class="absolute left-1/2 -translate-x-1/2" style="top: 0%">
-                  <div class="relative" style="transform: scale(0)">
-                    <div
-                      class="w-4 h-4 bg-black border-2 border-gray-800 rounded-full"
-                    ></div>
-                    <div
-                      class="absolute inset-0 w-4 h-4 bg-neon-green rounded-full"
-                      style="transform: scale(0)"
-                    ></div>
-                  </div>
-                </div>
-                <div
-                  class="absolute left-1/2 -translate-x-1/2"
-                  style="top: 50%"
-                >
-                  <div class="relative" style="transform: scale(0)">
-                    <div
-                      class="w-4 h-4 bg-black border-2 border-gray-800 rounded-full"
-                    ></div>
-                    <div
-                      class="absolute inset-0 w-4 h-4 bg-neon-green rounded-full"
-                      style="transform: scale(0)"
-                    ></div>
-                  </div>
-                </div>
-                <div
-                  class="absolute left-1/2 -translate-x-1/2"
-                  style="top: 100%"
-                >
-                  <div class="relative" style="transform: scale(0)">
-                    <div
-                      class="w-4 h-4 bg-black border-2 border-gray-800 rounded-full"
-                    ></div>
-                    <div
-                      class="absolute inset-0 w-4 h-4 bg-neon-green rounded-full"
-                      style="transform: scale(0)"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="space-y-32">
-                <div
-                  class="flex flex-col lg:flex-row gap-8 items-center"
-                  style="opacity: 0; transform: translateY(100px) scale(0.8)"
-                >
-                  <div class="flex-1 w-full" style="transform: rotate(5deg)">
-                    <div
-                      class="relative aspect-video rounded-2xl overflow-hidden group shadow-xl"
-                    >
-                      <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"
-                      ></div>
-                      <img
-                        alt="Foundation"
-                        loading="lazy"
-                        width="800"
-                        height="450"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-full object-cover"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2F1st.webp&amp;w=1920&amp;q=90"
-                      />
-                      <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        style="
-                          background: radial-gradient(
-                            circle at var(--mouse-x) var(--mouse-y),
-                            rgba(0, 0, 0, 0.1) 0%,
-                            transparent 50%
-                          );
-                        "
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="flex-1 w-full">
-                    <div style="opacity: 0; transform: translateX(-50px)">
-                      <div
-                        class="text-white text-xs font-heading uppercase tracking-wider mb-4 bg-black inline-block px-3 py-1"
-                      >
-                        Chapter
-                        <!-- -->1
-                      </div>
-                      <h3
-                        class="text-3xl md:text-4xl lg:text-5xl font-display text-black mb-6"
-                      >
-                        Foundation
-                      </h3>
-                      <p
-                        class="text-sm md:text-lg text-black/80 leading-relaxed mb-6"
-                      >
-                        Step onto the chain—where every crossover is recorded,
-                        every dunk lives forever, and your rep is on-chain. This
-                        is FREESTYLE.
-                      </p>
-                      <a
-                        href="https://x.com/asterguardodin/status/1939587419176898598"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><div
-                          class="inline-flex items-center gap-2 text-black cursor-pointer group border-b-2 border-black pb-1 hover:border-black/60 transition-all"
-                        >
-                          <span
-                            class="font-heading uppercase tracking-wider text-sm"
-                            >Learn More</span
-                          ><span
-                            class="group-hover:translate-x-1 transition-transform"
-                            >→</span
-                          >
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col lg:flex-row-reverse gap-8 items-center"
-                  style="opacity: 0; transform: translateY(100px) scale(0.8)"
-                >
-                  <div class="flex-1 w-full" style="transform: rotate(5deg)">
-                    <div
-                      class="relative aspect-video rounded-2xl overflow-hidden group shadow-xl"
-                    >
-                      <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"
-                      ></div>
-                      <img
-                        alt="Built on Culture, Powered by Community"
-                        loading="lazy"
-                        width="800"
-                        height="450"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-full object-cover"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2F2nd.webp&amp;w=1920&amp;q=90"
-                      />
-                      <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        style="
-                          background: radial-gradient(
-                            circle at var(--mouse-x) var(--mouse-y),
-                            rgba(0, 0, 0, 0.1) 0%,
-                            transparent 50%
-                          );
-                        "
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="flex-1 w-full">
-                    <div style="opacity: 0; transform: translateX(50px)">
-                      <div
-                        class="text-white text-xs font-heading uppercase tracking-wider mb-4 bg-black inline-block px-3 py-1"
-                      >
-                        Chapter
-                        <!-- -->2
-                      </div>
-                      <h3
-                        class="text-3xl md:text-4xl lg:text-5xl font-display text-black mb-6"
-                      >
-                        Built on Culture, Powered by Community
-                      </h3>
-                      <p
-                        class="text-sm md:text-lg text-black/80 leading-relaxed mb-6"
-                      >
-                        FREESTYLE isn&#x27;t just a game. It&#x27;s a global
-                        street basketball movement—fueled by hoop dreams, street
-                        culture vibes, and Web3 freedom. If you feel it,
-                        you&#x27;re already part of it.
-                      </p>
-                      <a
-                        href="https://x.com/asterguardodin/status/1939655091096781280"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        ><div
-                          class="inline-flex items-center gap-2 text-black cursor-pointer group border-b-2 border-black pb-1 hover:border-black/60 transition-all"
-                        >
-                          <span
-                            class="font-heading uppercase tracking-wider text-sm"
-                            >Learn More</span
-                          ><span
-                            class="group-hover:translate-x-1 transition-transform"
-                            >→</span
-                          >
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col lg:flex-row gap-8 items-center"
-                  style="opacity: 0; transform: translateY(100px) scale(0.8)"
-                >
-                  <div class="flex-1 w-full" style="transform: rotate(5deg)">
-                    <div
-                      class="relative aspect-video rounded-2xl overflow-hidden group shadow-xl"
-                    >
-                      <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"
-                      ></div>
-                      <img
-                        alt="Game On. Stay Locked In."
-                        loading="lazy"
-                        width="800"
-                        height="450"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-full object-cover"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fstory_3.webp&amp;w=1920&amp;q=90"
-                      />
-                      <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        style="
-                          background: radial-gradient(
-                            circle at var(--mouse-x) var(--mouse-y),
-                            rgba(0, 0, 0, 0.1) 0%,
-                            transparent 50%
-                          );
-                        "
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="flex-1 w-full">
-                    <div style="opacity: 0; transform: translateX(-50px)">
-                      <div
-                        class="text-white text-xs font-heading uppercase tracking-wider mb-4 bg-black inline-block px-3 py-1"
-                      >
-                        Chapter
-                        <!-- -->3
-                      </div>
-                      <h3
-                        class="text-3xl md:text-4xl lg:text-5xl font-display text-black mb-6"
-                      >
-                        Game On. Stay Locked In.
-                      </h3>
-                      <p
-                        class="text-sm md:text-lg text-black/80 leading-relaxed mb-6"
-                      >
-                        A new era is loading. The next chapter of FREESTYLE is
-                        coming—louder, bolder, and fully on-chain. Don&#x27;t
-                        blink.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="text-center mt-24"
-              style="opacity: 0; transform: translateY(50px)"
-            >
-              <h3 class="text-2xl md:text-3xl font-display text-black mb-4">
-                Ready to be part of the story?
-              </h3>
-              <p class="text-black/70 mb-8">
-                Benchwarmers don&#x27;t make history. Step up. Join the team.
-                Shape the game.
-              </p>
-              <a
-                href="#footer"
-                class="inline-block px-8 py-4 bg-black text-white font-heading uppercase tracking-wider border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300"
-                tabindex="0"
-                >Join Our Community</a
-              >
-            </div>
-          </div>
-        </section>
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <section
-          class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-white to-orange-50"
-          id="blog"
-          style="opacity: 0"
-        >
-          <div class="container-max">
-            <div
-              class="text-center mb-12"
-              style="opacity: 0; transform: translateY(20px)"
-            >
-              <div
-                class="inline-block px-4 py-2 bg-black rounded-full mb-4"
-                style="transform: scale(0)"
-              >
-                <!-- <span
-                  class="text-white text-sm font-heading uppercase tracking-wider"
-                  >The Journey</span
-                > -->
-              </div>
-              <h2
-                class="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-4 text-black"
-              >
-                Roadmap
-              </h2>
-              <!-- <p class="text-sm md:text-xl text-black/70 max-w-2xl mx-auto">
-                Here is Aster Guardian ODIN
-              </p> -->
-            </div>
-            <div
-              class="relative max-w-4xl mx-auto mb-12"
-              style="opacity: 0; transform: translateY(50px) scale(0.9)"
-            >
-              <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  alt="Free Style Roadmap"
-                  loading="lazy"
-                  width="1200"
-                  height="800"
-                  decoding="async"
-                  data-nimg="1"
-                  class="w-full h-auto"
-                  style="color: transparent"
-                  
-                  src="/_next/image?url=%2Froadmap.webp&amp;w=3840&amp;q=90"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-orange-600/80 via-transparent to-transparent"
-                  style="opacity: 0"
-                ></div>
-                <div
-                  class="absolute bottom-0 left-0 right-0 p-8 text-white"
-                  style="opacity: 0; transform: translateY(20px)"
-                >
-                  <h3 class="text-2xl md:text-3xl font-bold mb-2">
-                    To The Moon
-                  </h3>
-                  <p class="text-lg opacity-90">
-                    The moon is coming for Odin.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 max-w-2xl mx-auto text-center"
-              style="opacity: 0; transform: scale(0.9)"
-            >
-              <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">
-                More Blog Coming Soon
-              </h3>
-              <!-- <p class="text-sm md:text-lg text-black/70 mb-6">
-                We&#x27;re finalizing our comprehensive roadmap. Join our
-                community to be the first to know!
-              </p> -->
-              <div class="w-12 h-12 mx-auto">
-                <div
-                  class="w-full h-full border-4 border-black border-t-transparent rounded-full"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-        <section
-          class="relative overflow-hidden py-24 md:py-32"
-          id="partners"
-          style="opacity: 0"
-        >
-          <div class="mx-auto px-4 md:px-8 lg:px-16 max-w-7xl">
-            <div style="opacity: 0; transform: translateY(40px)">
-              <div class="text-center mb-16">
-                <div
-                  class="inline-block px-4 py-2 bg-black rounded-full mb-4"
-                  style="transform: scale(0)"
-                >
-                  <span
-                    class="text-white text-sm font-heading uppercase tracking-wider"
-                    >Our Partners</span
-                  >
-                </div>
-                <h2
-                  class="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-4 text-black"
-                >
-                  Building Together
-                </h2>
-                <p class="text-sm md:text-xl text-black/70 max-w-2xl mx-auto">
-                  Partnering with the best in the blockchain ecosystem
-                </p>
-              </div>
-            </div>
-            <div class="space-y-16">
-              <div style="opacity: 0; transform: translateY(30px)">
-                <h3
-                  class="text-2xl md:text-3xl font-display text-black mb-8 text-center"
-                >
-                  Investment &amp; Strategic Partnership
-                </h3>
-                <div class="flex flex-wrap justify-center gap-6">
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Chain Capital"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2FChain%20Capital.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="M77"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2FM77.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="RFD"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2FRFD.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Ternary"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2FTernary.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Animoca Brands"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2Fanimoca.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="KAIA"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2Fkaia.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="YGG"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Finvestment_partner%2Fygg.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="opacity: 0; transform: translateY(30px)">
-                <h3
-                  class="text-2xl md:text-3xl font-display text-black mb-8 text-center"
-                >
-                  Mainnet Partners
-                </h3>
-                <div class="flex flex-wrap justify-center gap-6">
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="BNB Chain"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fmainnet_partner%2FMainnet_BNB_Chain.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Arbitrum"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fmainnet_partner%2FMainnet_%20Arbitrum.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="KAIA"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fmainnet_partner%2FMainnet_%20KAIA.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Soneium"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fmainnet_partner%2FMainnet_%20Soneium.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Avalanche"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fmainnet_partner%2FMainnet_%20avalanche.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-        
-              <div style="opacity: 0; transform: translateY(30px)">
-                <h3
-                  class="text-2xl md:text-3xl font-display text-black mb-8 text-center"
-                >
-                  Ecosystem Partners
-                </h3>
-                <div class="flex flex-wrap justify-center gap-6">
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="ABGA"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fecosystem_partner%2FABGA.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="Daily84"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fecosystem_partner%2FDaily84.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="GuildQB"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fecosystem_partner%2FGuildQB.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                  <div class="group" style="opacity: 0; transform: scale(0.8)">
-                    <div
-                      class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 w-[180px] h-[100px] flex items-center justify-center"
-                    >
-                      <img
-                        alt="YGG"
-                        loading="lazy"
-                        width="150"
-                        height="80"
-                        decoding="async"
-                        data-nimg="1"
-                        class="w-full h-16 object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        style="color: transparent"
-                        
-                        src="/_next/image?url=%2Fecosystem_partner%2Fygg.webp&amp;w=384&amp;q=75"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="relative w-full overflow-hidden bg-black py-4">
-          <div class="flex whitespace-nowrap items-center">
-            <span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            ><span
-              class="inline-flex items-center text-[8vw] lg:text-[6vw] font-black text-orange-500 font-display"
-              >GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span>
-              <!-- -->GUARDIAN ODIN<!-- -->
-              <span class="inline-block mx-4">🥷</span></span
-            >
-          </div>
-        </div>
-      </main>
-      <footer id="footer" class="bg-orange-500 border-t border-orange-600">
-        <div
-          class="relative h-64 md:h-80 overflow-hidden"
-          style="opacity: 0; transform: translateY(50px)"
-        >
-          <img
-            alt="Join Our Community"
-            loading="lazy"
-            decoding="async"
-            data-nimg="fill"
-            class="object-cover"
-            style="
-              position: absolute;
-              height: 100%;
-              width: 100%;
-              left: 0;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              color: transparent;
-            "
-            sizes="100vw"
-            
-            src="/_next/image?url=%2Ffooter.webp&amp;w=3840&amp;q=90"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-orange-500 via-orange-500/80 to-transparent"
-          ></div>
-          <div
-            class="absolute inset-0 flex items-center justify-center text-center"
-            style="opacity: 0; transform: scale(0.9)"
-          >
-            <div>
-              <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Join $ODIN?
-              </h2>
-              <p class="text-lg text-white/90 mb-6">
-                Be part of something bigger. Be part of $ODIN.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="mx-auto px-4 md:px-8 lg:px-16 max-w-7xl">
-          <div class="py-16">
-            <div class="text-center mb-12">
-              <div class="flex items-center justify-center gap-8 mt-12 mb-8">
-                <div
-                  class="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-xs"
-                  style="transform: scaleX(0)"
-                ></div>
-                <div
-                  class="w-2 h-2 bg-white/50 rounded-full"
-                  style="opacity: 0; transform: none"
-                ></div>
-                <div
-                  class="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-xs"
-                  style="transform: scaleX(0)"
-                ></div>
-              </div>
-              <div
-                class="flex justify-center gap-4 mb-8"
-                style="opacity: 0; transform: translateY(20px)"
-              >
-                <a
-                  href="https://x.com/asterguardodin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="group relative"
-                  style="opacity: 0; transform: scale(0)"
-                  ><div
-                    class="absolute inset-0 bg-white rounded-full blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300"
-                  ></div>
-                  <div
-                    class="relative p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      height="24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span
-                    class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
-                    >X (Twitter)</span
-                  ></a
-                ><a
-                  href="https://t.me/asterguardodin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="group relative"
-                  style="opacity: 0; transform: scale(0)"
-                  ><div
-                    class="absolute inset-0 bg-white rounded-full blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300"
-                  ></div>
-                  <div
-                    class="relative p-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 496 512"
-                      height="24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span
-                    class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
-                    >Telegram</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div
-        class="fixed bottom-8 right-8 z-50"
-        style="opacity: 0; transform: scale(0)"
-      >
-        <div class="relative">
-          <button
-            class="relative w-16 h-16 bg-black text-white rounded-full shadow-2xl flex items-center justify-center group overflow-hidden border-2 border-white"
-            tabindex="0"
-          >
-            <div>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                height="20"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
-                ></path>
-              </svg>
-            </div>
-            <div
-              class="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex gap-1"
-            >
-              <div
-                class="w-1 h-1 rounded-full transition-colors duration-300 bg-white"
-              ></div>
-              <div
-                class="w-1 h-1 rounded-full transition-colors duration-300 bg-white/30"
-              ></div>
-            </div></button
-          ><button
-            class="absolute -top-2 -left-2 w-8 h-8 bg-white text-black rounded-full shadow-lg flex items-center justify-center border border-black"
-            tabindex="0"
-            style="transform: scale(0)"
-          >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 576 512"
-              height="14"
-              width="14"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zm233.32-51.08c-11.17-7.33-26.18-4.24-33.51 6.95-7.34 11.17-4.22 26.18 6.95 33.51 66.27 43.49 105.82 116.6 105.82 195.58 0 78.98-39.55 152.09-105.82 195.58-11.17 7.32-14.29 22.34-6.95 33.5 7.04 10.71 21.93 14.56 33.51 6.95C528.27 439.58 576 351.33 576 256S528.27 72.43 448.35 19.97zM480 256c0-63.53-32.06-121.94-85.77-156.24-11.19-7.14-26.03-3.82-33.12 7.46s-3.78 26.21 7.41 33.36C408.27 165.97 432 209.11 432 256s-23.73 90.03-63.48 115.42c-11.19 7.14-14.5 22.07-7.41 33.36 6.51 10.36 21.12 15.14 33.12 7.46C447.94 377.94 480 319.54 480 256zm-141.77-76.87c-11.58-6.33-26.19-2.16-32.61 9.45-6.39 11.61-2.16 26.2 9.45 32.61C327.98 228.28 336 241.63 336 256c0 14.38-8.02 27.72-20.92 34.81-11.61 6.41-15.84 21-9.45 32.61 6.43 11.66 21.05 15.8 32.61 9.45 28.23-15.55 45.77-45 45.77-76.88s-17.54-61.32-45.78-76.86z"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!--$?--><template id="B:1"></template
-    ><!--/$-->
-    <script
-      src="/_next/static/chunks/webpack-05e9498bb2f9a062.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"
-      async=""
-    ></script>
-    <div hidden id="S:1"></div>
-    <script>
-      $RC = function (b, c, e) {
-        c = document.getElementById(c);
-        c.parentNode.removeChild(c);
-        var a = document.getElementById(b);
-        if (a) {
-          b = a.previousSibling;
-          if (e) (b.data = "$!"), a.setAttribute("data-dgst", e);
-          else {
-            e = b.parentNode;
-            a = b.nextSibling;
-            var f = 0;
-            do {
-              if (a && 8 === a.nodeType) {
-                var d = a.data;
-                if ("/$" === d)
-                  if (0 === f) break;
-                  else f--;
-                else ("$" !== d && "$?" !== d && "$!" !== d) || f++;
-              }
-              d = a.nextSibling;
-              e.removeChild(a);
-              a = d;
-            } while (a);
-            for (; c.firstChild; ) e.insertBefore(c.firstChild, a);
-            b.data = "$";
-          }
-          b._reactRetry && b._reactRetry();
-        }
-      };
-      $RC("B:1", "S:1");
-    </script>
-    <div hidden id="S:0"></div>
-    <script>
-      $RC("B:0", "S:0");
-    </script>
-    <script>
-      (self.__next_f = self.__next_f || []).push([0]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '1:"$Sreact.fragment"\n3:I[69243,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],""]\n4:I[71587,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"ScrollIndicator"]\n5:I[95435,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"Header"]\n6:I[37187,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"HeroSection"]\n7:I[98428,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"ScrollingTextDivider"]\n8:I[18403,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        'VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"GameEventSection"]\n9:I[28048,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"RaffleSection"]\na:I[39465,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"default"]\nb:I[16589,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"StorySection"]\nc:I[81069,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"default"]\nd:I[95270,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '_VLMDkFBgsZD3THd7GdLMggd43erX"],"PartnersSection"]\ne:I[18317,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"Footer"]\nf:I[41582,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"BackToTop"]\n10:I[99240,["6711","static/chunks/8e1d74a4-c86ed6efb7574a65.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","1454","static/chunks/1454-6a8edc3091e68685.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","8974","static/chunks/app/page-c62a94accf259cbc.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX"],"BGMPlayer"]\n11:I[59665,[],"OutletBoundary"]\n14:I[74911,[],"AsyncMetadataOutlet"]\n16:I[59665,[],"ViewportBoundary"]\n18:I[59665,[],"MetadataBoundary"]\n1a:I[26614,[],""]\n1b:"$Sreact.suspense"\n1c:I[74911,[],"AsyncMetadata"]\n1e:I[81107,["4946","static/chunks/23589dac-9d2825ac9161f28e.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","6183","static/chunks/6183-c7ecf01c64d86290.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2228","static/chunks/2228-b660489c86f77b75.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","5325","static/chunks/5325-1dec12a5c0c94f5a.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","3665","static/chunks/3665-f5bd254749338898.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2145","static/chunks/2145-306b9370a2746a29.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","2247","static/chunks/2247-c100bb609e7745c1.js?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","7177","static/chunks/app/layout-0b598abb5f44694e.js?dpl=dpl_',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        'VLMDkFBgsZD3THd7GdLMggd43erX"],"Web3Provider"]\n1f:I[87555,[],""]\n20:I[31295,[],""]\n:HL["/_next/static/media/330d5559b8e2c3d6-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/media/53890c8af469a830-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/media/7cba1811e3c25a15-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/media/f0c14fdbd39bee05-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/css/280dc8809cb07948.css?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","style"]\n',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '0:{"P":null,"b":"YqpuQj3XkD0tXid6Gx2RR","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/280dc8809cb07948.css?dpl=dpl_VLMDkFBgsZD3THd7GdLMggd43erX","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L2"]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","$L3",null,{"id":"json-ld","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"VideoGame\\",\\"name\\":\\"GUARDIAN ODIN\\",\\"description\\":\\"Experience GUARDIAN ODIN, the revolutionary Web3 online basketball game by Joycity. Play, earn, and compete in the blockchain-powered street basketball universe.\\",\\"genre\\":[\\"Sports\\",\\"Basketball\\",\\"Blockchain Game\\"],\\"gamePlatform\\":[\\"PC\\",\\"Web Browser\\"],\\"publisher\\":{\\"@type\\":\\"Organization\\",\\"name\\":\\"Joycity\\"},\\"creator\\":{\\"@type\\":\\"Organization\\",\\"name\\":\\"Free Style Team\\"},\\"operatingSystem\\":\\"Web Browser\\",\\"applicationCategory\\":\\"Game\\",\\"aggregateRating\\":{\\"@type\\":\\"AggregateRating\\",\\"ratingValue\\":\\"4.8\\",\\"ratingCount\\":\\"1250\\"},\\"offers\\":{\\"@type\\":\\"Offer\\",\\"price\\":\\"0\\",\\"priceCurrency\\":\\"USD\\"},\\"sameAs\\":[\\"https://x.com/asterguardodin\\",\\"https://t.me/asterguardodin/freestyleclassic1\\"]}"}}],["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L4",null,{}],["$","$L5",null,{}],["$","main",null,{"className":"flex-1 pt-20","children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L7",null,{}],["$","$L9",null,{}],["$","$L7",null,{}],["$","$La",null,{}],["$","$L7",null,{}],["$","$Lb",null,{}],["$","$L7",null,{}],["$","$Lc",null,{}],["$","$L7",null,{}],["$","$Ld",null,{}],["$","$L7",null,{}]]}],["$","$Le",null,{}],["$","$Lf",null,{}],["$","$L10",null,{}]]}]],null,["$","$L11",null,{"children":["$L12","$L13",["$","$L14",null,{"promise":"$@15"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","7wdTEUQxQyCz96f3kfd8Rv",{"children":[["$","$L16",null,{"children":"$L17"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$L18",null,{"children":"$L19"}]]}],false]],"m":"$undefined","G":["$1a","$undefined"],"s":false,"S":false}\n',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '19:["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":["$","$L1c",null,{"promise":"$@1d"}]}]}]\n2:["$","html",null,{"lang":"en","className":"scroll-smooth","children":["$","body",null,{"className":"__variable_bc0dcf __variable_5625f3 __variable_68a28d __variable_e7b85b font-sans antialiased","children":["$","$L1e",null,{"initialState":"$undefined","children":["$","$L1f",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L20",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]\n13:null\n17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#000000"}]]\n12:null\n',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '15:{"metadata":[["$","title","0",{"children":"GUARDIAN ODIN"}],["$","meta","1",{"name":"description","content":"Experience GUARDIAN ODIN, the revolutionary Web3 online basketball game. Play, earn, and compete in the blockchain-powered street basketball universe."}],["$","meta","2",{"name":"author","content":"Free Style Team"}],["$","meta","3",{"name":"author","content":"Joycity"}],["$","link","4",{"rel":"manifest","href":"/manifest.json","crossOrigin":"$undefined"}],["$","meta","5",{"name":"keywords","content":"Web3 Online Game,Joycity,Basketball Game,Blockchain,GUARDIAN ODIN,Web3 Basketball,Blockchain Gaming,Play to Earn,Street Basketball,NFT Basketball Game,Crypto Gaming,Online Basketball Game"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://freestyle.example.com"}],["$","meta","9",{"property":"og:title","content":"GUARDIAN ODIN by Joycity"}],["$","meta","10",{"property":"og:description","content":"Experience GUARDIAN ODIN, the revolutionary Web3 online basketball game. Play, earn, and compete in the blockchain-powered street basketball universe."}],["$","meta","11",{"property":"og:url","content":"https://freestyle.example.com"}],["$","meta","12",{"property":"og:site_name","content":"GUARDIAN ODIN"}],["$","meta","13",{"property":"og:locale","content":"en_US"}],["$","meta","14",{"property":"og:image","content":"https://freestyle.example.com/og-image.png"}],["$","meta","15",{"property":"og:image:width","content":"1200"}],["$","meta","16",{"property":"og:image:height","content":"630"}],["$","meta","17",{"property":"og:image:alt","content":"GUARDIAN ODIN"}],["$","meta","18",{"property":"og:type","content":"website"}],["$","meta","19",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","20",{"name":"twitter:site","content":"@FreeStyle_Web3"}],["$","meta","21",{"name":"twitter:creator","content":"@FreeStyle_Web3"}],["$","meta","22",{"name":"twitter:title","content":"GUARDIAN ODIN"}],["$","meta","23",{"name":"twitter:description","content":"Experience the revolutionary Web3 online basketball game. Play, earn, and compete in the blockchain-powered street basketball universe."}],["$","meta","24",{"name":"twitter:image","content":"https://freestyle.example.com/og-image.png"}],["$","link","25",{"rel":"icon","href":"/icon.png?0d33fdf41b08cef3","type":"image/png","sizes":"192x192"}],["$","link","26",{"rel":"apple-touch-icon","href":"/apple-icon.png?0c2e81a1d85ed206","type":"image/png","sizes":"192x192"}]],"error":null,"digest":"$undefined"}\n',
-      ]);
-    </script>
-    <script>
-      self.__next_f.push([
-        1,
-        '1d:{"metadata":"$15:metadata","error":null,"digest":"$undefined"}\n',
-      ]);
-    </script>
-  </body>
+<body data-custom-cursor>
+	<div style="opacity: 5%; position: fixed;height: 100%; width: 100%; z-index: 40; top: 0; left: 0; pointer-events: none; background-blend-mode: overlay; background-image: url('/img/noise.gif'); background-size: cover;"></div>
+	<div class="wrapper">
+		<div class="menu-open-bg"></div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#hero" data-goto=".hero" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<span>/</span>
+							</li>
+							<li class="menu__item">
+								<a href="#about" data-goto=".about" data-goto-top="-20" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<span>/</span>
+							</li>
+							<li class="menu__item">
+								<a href="#tokenomics" data-goto=".approach" class="menu__link">Tokenomics</a>
+							</li>
+							<li class="menu__item">
+								<span>/</span>
+							</li>
+							<li class="menu__item">
+								<a href="#roadmap" data-goto=".products" data-goto-top="-30" class="menu__link">Roadmap & Faq</a>
+							</li>
+							<li class="menu__item">
+								<span>/</span>
+							</li>
+							<li class="menu__item">
+								<a href="https://www.dextools.io/app/en/ether/pair-explorer/0xTBA" data-goto=".products" data-goto-top="-30" class="menu__link">View Chart</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero" data-watch="navigator" id="hero">
+				<div class="hero__bg">
+					<img src="img/hero/bg.svg" alt="Image" />
+				</div>
+				<div class="hero__container">
+					<div class="hero__main">
+						<div class="hero__title">
+							<img src="img/hero/01.svg" alt="Image" />
+							<img src="img/hero/02.png" alt="Image" />
+							<img src="img/hero/03.png" alt="Image" />
+						</div>
+						<div class="hero__actions">
+							<div class="hero__social">
+								<!-- <a href="https://app.uniswap.org/explore/tokens/ethereum/0x2d52bc3c63452d7356cedc98c120c4e08c2b2357" target="_blank" class="hero__social-item">
+									<img src="img/social/Uniswap.svg" alt="Uniswap" />
+								</a> -->
+								<a href="https://x.com" target="_blank" class="hero__social-item">
+									<img src="img/social/X.svg" alt="X" />
+								</a>
+								<a href="https://t.me" target="_blank" class="hero__social-item">
+									<img src="img/social/Tel.svg" alt="Telegram" />
+								</a>
+								<!-- <a href="https://medium.com/@ninjatrade" target="_blank" class="hero__social-item">
+									<img src="img/social/Medium.svg" alt="Medium" />
+								</a> -->
+								<!-- <a href="https://ninjatrade-io.gitbook.io/ninjatrade" target="_blank" class="hero__social-item">
+									<img src="img/social/Gitbook.svg" alt="Gitbook" />
+								</a> -->
+								<a href="https://www.dextools.io/app/en/ether/pair-explorer/0xTBA" target="_blank" class="hero__social-item">
+									<img src="img/social/Dextools.svg" alt="Dextools" />
+								</a>
+								<!-- <a href="https://etherscan.io/token/0x2d52bc3c63452d7356cedc98c120c4e08c2b2357" target="_blank" class="hero__social-item">
+									<img src="img/social/BaseScan.svg" alt="BaseScan" />
+								</a> -->
+							</div>
+							<a href="https://pancakeswap.com" target="_blank" class="hero__button">
+								<span>Buy $ODIN</span>
+								<img src="img/hero/icon.svg" alt="Icon" />
+							</a>
+						</div>
+					</div>
+					<a href="#about" data-goto=".about" data-goto-top="-20" class="hero__learn-more">
+						<span>Learn more</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+							<path d="M16 3.42188L6.70312 12.7031L5.29688 11.2969L16 0.578125L26.7031 11.2969L25.2969 12.7031L16 3.42188ZM16 28.5781L25.2969 19.2969L26.7031 20.7031L16 31.4219L5.29688 20.7031L6.70312 19.2969L16 28.5781Z" fill="#F2F2F2" />
+						</svg>
+					</a>
+				</div>
+			</section>
+			<section class="page__about about" data-watch="navigator" id="about">
+				<div class="about__container" data-watch-threshold="0.6" data-watch-once data-watch>
+					<div class="about__image" data-watch-threshold="0.55" data-watch-once data-watch>
+						<img src="img/about/02.png" alt="Image" />
+						<img src="img/about/01.png" alt="Image" />
+					</div>
+					<div class="about__content" data-watch-threshold="0.55" data-watch-once data-watch>
+						<h2 class="about__title">
+							<span>ABOUT</span>
+							<img src="img/about/titleDecor.svg" alt="ABOUT" />
+						</h2>
+						<div class="about__text">
+							ODIN is one of the two Aster Guardians,
+							standing alongside Dust in the guardian duo.
+						</div>
+						<a href="https://t.me" target="_blank" class="about__button">
+							<span>Join $ODIN</span>
+							<!-- <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+								<g clip-path="url(#clip0_577_2687)">
+									<path d="M12.8864 3.35034C12.1212 3.3503 11.3139 3.6369 10.6296 4.15151C9.9454 4.66612 9.43594 5.36983 9.20551 6.11866L9.15776 6.29119L6.72893 16.094H5.97893C5.33193 16.094 4.67943 16.5763 4.46241 17.1939L4.42532 17.3194L4.00028 19.0349C3.81438 19.785 3.92791 20.5068 4.31764 21.0525C4.70738 21.5983 5.34385 21.9268 6.09684 21.9708L6.27163 21.9757H16.2716C17.0368 21.9757 17.8441 21.6891 18.5284 21.1745C19.2126 20.6599 19.7221 19.9562 19.9525 19.2074L20.0003 19.0349L22.4291 9.23203H24.1791C24.4885 9.23217 24.8149 9.11978 25.095 8.9166C25.3752 8.71343 25.5892 8.43392 25.6956 8.13216L25.7327 8.00668L26.1578 6.29119C26.3437 5.54107 26.2301 4.81928 25.8404 4.27351C25.4507 3.72774 24.8142 3.39925 24.0612 3.35524L23.8864 3.35034H12.8864ZM12.4006 5.31091H21.4006L18.0003 19.0349C17.9359 19.2948 17.7687 19.5442 17.5356 19.728C17.3026 19.9119 17.0226 20.0151 16.7574 20.0151C16.4922 20.0151 16.2634 19.9119 16.1214 19.728C15.9794 19.5442 15.9359 19.2948 16.0003 19.0349L16.4253 17.3194C16.5929 16.643 16.1689 16.094 15.4789 16.094H8.72893L11.1578 6.29119C11.2222 6.0312 11.3893 5.78186 11.6224 5.59802C11.8555 5.41419 12.1354 5.31091 12.4006 5.31091ZM6.24316 18.0546H14.2432L14.0003 19.0349C13.9153 19.378 13.8934 19.7083 13.9274 20.0151H6.75739C6.49218 20.0151 6.26341 19.9119 6.12143 19.728C5.97944 19.5442 5.93586 19.2948 6.00028 19.0349L6.24316 18.0546ZM14.7005 12.1729C14.4352 12.1729 14.1553 12.2762 13.9222 12.46C13.6891 12.6438 13.522 12.8932 13.4576 13.1532C13.3932 13.4131 13.4367 13.6625 13.5787 13.8463C13.7207 14.0302 13.9495 14.1334 14.2147 14.1334H16.2147C16.4799 14.1334 16.7599 14.0302 16.9929 13.8463C17.226 13.6625 17.3932 13.4131 17.4576 13.1532C17.522 12.8932 17.4784 12.6438 17.3364 12.46C17.1944 12.2762 16.9657 12.1729 16.7005 12.1729H14.7005ZM13.672 8.25175C13.4068 8.25175 13.1268 8.35503 12.8938 8.53887C12.6607 8.72271 12.4935 8.97205 12.4291 9.23203C12.3647 9.49202 12.4083 9.74136 12.5503 9.9252C12.6922 10.109 12.921 10.2123 13.1862 10.2123H17.1862C17.4514 10.2123 17.7314 10.109 17.9645 9.9252C18.1976 9.74136 18.3647 9.49202 18.4291 9.23203C18.4935 8.97205 18.45 8.72271 18.308 8.53887C18.166 8.35503 17.9372 8.25175 17.672 8.25175H13.672ZM23.4006 5.31091C23.6456 5.31094 23.8601 5.39909 24.0036 5.55864C24.1471 5.71819 24.2096 5.93804 24.1792 6.17649L24.1578 6.29119L23.9149 7.27147H22.9149L23.4006 5.31091Z" fill="#F2F2F2" />
+								</g>
+								<defs>
+									<clipPath id="clip0_577_2687">
+										<rect width="24" height="24" fill="white" transform="matrix(1 0 -0.242883 0.980282 6.61493 0.412842)" />
+									</clipPath>
+								</defs>
+							</svg> -->
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__approach approach" data-watch="navigator">
+				<div class="approach__container" id="tokenomics">
+					<!-- <h2 class="approach__title" data-watch-threshold="0.75" data-watch-once data-watch>
+						<img src="img/tokenomics/title.svg" alt="OUR APPROACH" />
+						<p style="justify-content: center; display: flex; align-items: center; font-size: 100px;">Tokenomics</p>
+					</h2> -->
+					<h2 class="products__title" data-watch-threshold="0.75" data-watch-once data-watch>
+						<span style="color: white;">Tokenomics</span>
+					</h2>
+					<div class="approach__body">
+						<div class="approach__image" data-watch-threshold="0.6" data-watch-once data-watch data-prlx-parent>
+							<img src="img/tokenomics/01.png" alt="Image" />
+							<img data-prlx src="img/tokenomics/02.png" alt="Image" />
+						</div>
+						<div class="approach__items">
+							<article class="approach__item item-approach" data-watch-threshold="0.8" data-watch-once data-watch>
+								<div class="item-approach__header">
+									<span>Total Supply</span>
+									<img src="img/tokenomics/i1.png" alt="Image" />
+								</div>
+								<div class="item-approach__header">
+									<span>1,000,000,000</span>
+								</div>
+								<!-- <div class="item-approach__text">
+									1,000,000,000
+								</div> -->
+							</article>
+							<article class="approach__item item-approach" data-watch-threshold="0.8" data-watch-once data-watch>
+								<div class="item-approach__header">
+									<span>lp 100% locked</span>
+									<img src="img/tokenomics/i2.png" alt="Image" />
+								</div>
+								<!-- <div class="item-approach__header">
+									<span>100% locked</span>
+								</div> -->
+							</article>
+							<article class="approach__item item-approach" data-watch-threshold="0.8" data-watch-once data-watch>
+								<div class="item-approach__header">
+									<span>Ownership</span>
+									<img src="img/tokenomics/i3.png" alt="Image" />
+								</div>
+								<div class="item-approach__header">
+									<span>renounced</span>
+								</div>
+							</article>
+							<article class="approach__item item-approach" data-watch-threshold="0.8" data-watch-once data-watch>
+								<div class="item-approach__header">
+									<span>Tax fee</span>
+									<img src="img/tokenomics/i3.png" alt="Image" />
+								</div>
+								<div class="item-approach__header">
+									<span>0% Buy/Sell Tax</span>
+								</div>
+							</article>
+							<!-- <article class="approach__item item-approach" data-watch-threshold="0.8" data-watch-once data-watch>
+								<div class="item-approach__text-2">
+									NINJA TRADE IS DESIGNED FOR TRADERS WHO NEED SPEED AND
+									ACCURACY. WE FOCUS ON MAKING TOKEN SNIPING ACCESSIBLE AND
+									RELIABLE FOR BOTH SEASONED PROS AND NEWCOMERS ALIKE.
+								</div>
+							</article> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products products" data-watch="navigator" id="roadmap">
+				<div class="products__container">
+					<h2 class="products__title" data-watch-threshold="0.75" data-watch-once data-watch>
+						<span>Roadmap & Faq</span>
+						<img src="img/roadmap/titleDec.svg" alt="" />
+					</h2>
+					<div class="products__items" data-watch-threshold="0.45" data-watch-once data-watch>
+						<article class="products__item item-products" data-watch-threshold="0.65" data-watch-once data-watch>
+							<div class="item-products__body">
+								<!-- <div class="item-products__label">roadmap</div> -->
+								<h3 class="item-products__title">
+									<span>$ODIN's</span> roadmap
+								</h3>
+								<div data-spollers data-one-spoller class="item-products__spollers spollers">
+									<details class="spollers__item" data-open>
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Foundation</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											We introduce ODIN’s lore as one of the ASTER Guardians, deploy the ODIN token smart contract on Binance Smart Chain, launch the official website and socials.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Growth</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											We list ODIN on BSC DEXs like PancakeSwap, apply to CoinGecko and CoinMarketCap, release ODIN-themed NFT art drops, host AMAs and influencer campaigns.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Ecosystem</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											We expand the ASTER Guardians universe with more tokens and characters, build cross-chain bridges from BSC to Ethereum and Solana, launch DAO governance, scale up marketing, and pursue major CEX listings.
+										</div>
+									</details>
+								</div>
+							</div>
+						</article>
+						<article class="products__item item-products" data-watch-threshold="0.65" data-watch-once data-watch>
+							<div class="item-products__body">
+								<!-- <div class="item-products__label">DATA PROVIDED</div> -->
+								<h3 class="item-products__title">
+									<span>Frequently ask</span> questions
+								</h3>
+								<div data-spollers data-one-spoller class="item-products__spollers spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>What is $ODIN?</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											ODIN is one of the two Aster Guardians, standing alongside Dust in the guardian duo.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Is $ODIN safe to buy?</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											As with all meme coins, $ODIN carries high risk and volatility
+										</div>
+									</details>
+									<!-- <details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Target Token</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											See token name, contract, and Etherscan link of sniping
+											activities.
+										</div>
+									</details> -->
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Where can I buy $ODIN?</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											PancakeSwap
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>How do I see $ODIN in my wallet?</span>
+												<img src="img/roadmap/s2.svg" alt="Icon" />
+											</div>
+										</summary>
+										<div class="spollers__body">
+											Copy the $ODIN contract address. 
+											In your wallet, select "Add Token" or "Import Token"
+											Paste the contract address.
+										</div>
+									</details>
+								</div>
+							</div>
+						</article>
+						<article class="products__item item-products" data-watch-threshold="0.65" data-watch-once data-watch>
+							<div class="item-products__body">
+								<h3 class="item-products__title">
+									<span>How to</span> Buy
+								</h3>
+								<div data-spollers data-one-spoller class="item-products__spollers spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Download wallet</span>
+												<!-- <img src="img/roadmap/s2.svg" alt="Icon" /> -->
+											</div>
+										</summary>
+										<!-- <div class="spollers__body">
+											Instant alerts for sniper activity.
+										</div> -->
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Buy BNB</span>
+												<!-- <img src="img/roadmap/s2.svg" alt="Icon" /> -->
+											</div>
+										</summary>
+										<!-- <div class="spollers__body">
+											Real-time competitor insights.
+										</div> -->
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<img src="img/roadmap/s1.svg" alt="Icon" />
+											<div class="spollers__title-body">
+												<span>Connect wallet& swap BNB for $ODIN</span>
+												<!-- <img src="img/roadmap/s2.svg" alt="Icon" /> -->
+											</div>
+										</summary>
+										<!-- <div class="spollers__body">
+											Enhanced sniping and visibility.
+										</div> -->
+									</details>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__join join">
+				<div class="join__wrapper" data-watch-threshold="0.3" data-watch-once data-watch>
+					<div class="join__bg">
+						<img src="img/join/bg.svg" alt="Image" />
+					</div>
+					<div class="join__container">
+						<div class="join__title">
+							<img src="img/join/01.svg" alt="Image" />
+							<img src="img/join/02.svg" alt="Image" />
+							<img src="img/join/03.png" alt="Image" />
+						</div>
+						<div class="join__actions">
+							<div class="join__text">
+								BUY $ODIN and JOIN THE ODIN COMMUNITY
+							</div>
+							<a href="https://pancakeswap.com" target="_blank" class="join__button">
+								<span>Buy $ODIN</span>
+								<img src="img/join/icon.svg" alt="Icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<div class="footer__top-body">
+						<div class="footer__top-content">
+							<div class="footer__top-column">
+								<h3 class="footer__top-title">Menu</h3>
+								<div class="footer__top-menu">
+									<a href="#hero" data-goto=".hero" class="footer__top-menu-item">home</a>
+									<a href="#about" data-goto=".about" data-goto-top="-20" class="footer__top-menu-item">about</a>
+									<a href="#tokenomics" data-goto=".approach" class="footer__top-menu-item">Tokenomics</a>
+									<a href="#roadmap" data-goto=".products" data-goto-top="-30" class="footer__top-menu-item">Roadmap</a>
+								</div>
+							</div>
+							<div class="footer__top-column">
+								<h3 class="footer__top-title">Links</h3>
+								<div class="footer__top-social">
+									<!-- <a href="https://app.uniswap.org/explore/tokens/ethereum/0x2d52bc3c63452d7356cedc98c120c4e08c2b2357" target="_blank" class="footer__top-social-item">
+										<img src="img/social/Uniswap.svg" alt="Uniswap" />
+									</a> -->
+									<a href="https://x.com" target="_blank" class="footer__top-social-item">
+										<img src="img/social/X.svg" alt="X" />
+									</a>
+									<a href="https://t.me" target="_blank" class="footer__top-social-item">
+										<img src="img/social/Tel.svg" alt="Telegram" />
+									</a>
+									<!-- <a href="https://medium.com/@ninjatrade" target="_blank" class="footer__top-social-item">
+										<img src="img/social/Medium.svg" alt="Medium" />
+									</a> -->
+									<!-- <a href="https://ninjatrade-io.gitbook.io/ninjatrade" target="_blank" class="footer__top-social-item">
+										<img src="img/social/Gitbook.svg" alt="Gitbook" />
+									</a> -->
+									<a href="https://www.dextools.io/app/en/ether/pair-explorer/0xTBA" target="_blank" class="footer__top-social-item">
+										<img src="img/social/Dextools.svg" alt="Dextools" />
+									</a>
+									<!-- <a href="https://etherscan.io/token/0x2d52bc3c63452d7356cedc98c120c4e08c2b2357" target="_blank" class="footer__top-social-item">
+										<img src="img/social/BaseScan.svg" alt="BaseScan" />
+									</a> -->
+								</div>
+							</div>
+						</div>
+						<div class="footer__top-image">
+							<img src="img/footer/02.png" alt="Logo" />
+							<img src="img/footer/01.png" alt="Logo" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="footer__bottom">
+				<div class="footer__container">
+					<div class="footer__bottom-body">
+						<span>2025 © ALL RIGHTS RESERVED</span>
+						<a href="https://t.me/osnovoco" target="_blank">
+							<span>Designed by</span>
+							<img src="img/osnovo.svg" alt="Osnovo" />
+						</a>
+					</div>
+				</div>
+			</div> -->
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20241027231045"></script>
+	<script src="js/demo.js"></script>
+</body>
+
 </html>
